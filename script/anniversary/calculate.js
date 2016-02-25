@@ -2,6 +2,6 @@ var oneDay = 24 * 60 * 60 * 1000;
 var firstDate = new Date(2014,08,04);
 var secondDate = Date.now();
 
-var diffDays = Math.around(Math.abs((firstDate.getTime() - secondDate)/oneDay));
+var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate)/oneDay));
 
 $('#days').html(diffDays);
