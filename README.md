@@ -1,7 +1,9 @@
-# Hello, world!
+# Salute and Self-introduction
 
-- This is my first blog. And my name is weitao.
+- This is my own blog. And my name is weitao. Nice to meet you.
 
-- I'm from Nanchang University.
+- I work and live in Shanghai.
 
 - Radiohead is my favorite rock band.
+
+- I also love movies.
