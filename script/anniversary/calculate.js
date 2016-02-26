@@ -1,7 +1,10 @@
-var oneDay = 24 * 60 * 60 * 1000;
-var firstDate = new Date(2014,08,04);
-var secondDate = Date.now();
+$(document).ready(function() {
+	var oneDay = 24 * 60 * 60 * 1000;
+	var firstDate = new Date(2014,08,04);
+	var secondDate = Date.now();
 
-var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate)/oneDay));
+	var days_between = Math.round(Math.abs((firstDate.getTime() - secondDate)/oneDay));
 
-$('#days').html(diffDays);
+	$('#days').html(days_between);
+
+});
