@@ -1,3 +1,7 @@
+body {
+	font: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+}
+
 .row.content {
 	height: 1500px;
 }
