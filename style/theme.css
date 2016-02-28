@@ -31,3 +31,7 @@ footer {
 .anchor {
 	float: right;
 }
+
+.article p {
+	text-indent: 2em;
+}
