@@ -19,6 +19,15 @@ footer {
 	padding-top: 15px;
 }
 
-.article img {
-	margin: 10px 50px 20px 150px;
+.img-container {
+	margin: 10px 50px 10px 50px;
+}
+
+.img-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.anchor {
+	float: right;
 }
