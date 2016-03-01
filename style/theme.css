@@ -24,6 +24,8 @@ footer {
 }
 
 .img-container {
+	width: 500px;
+	height: 333px;
 	margin: 10px 50px 10px 50px;
 }
 
