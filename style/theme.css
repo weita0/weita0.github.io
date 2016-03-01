@@ -1,5 +1,6 @@
 body {
-	font: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+	font-size: 15px;
 }
 
 .row.content {
@@ -26,7 +27,7 @@ footer {
 .img-container {
 	width: 500px;
 	height: 333px;
-	margin: 10px 50px 10px 50px;
+	margin: 10px 50px 15px 50px;
 }
 
 .img-container img {
