@@ -1,0 +1,29 @@
+.heart {
+	display: inline;
+	position: relative;
+	width: 100px;
+	height: 90px;
+	margin-top: 10px;
+}
+
+.heart:before,
+.heart:after {
+	position: absolute;
+	content: "";
+	width: 13px;
+	height: 20px;
+	background: #FFC0EE;
+	border-radius: 50px 50px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%; /* Rotate it around the bottom-left corner */
+}
+
+.heart:after {
+	/* the value of left should be the value of left of heart:before minus 50px */
+	transform: rotate(45deg);
+	transform-origin: 100% 100%; /* bottom-right*/
+}
+
+.heart.fix:after {
+	left: -13px;
+}
