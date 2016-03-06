@@ -29,7 +29,7 @@ $(document).ready(function() {
 	});
 
 	function makeItDisappear(element, milliSecond) {
-		setTimeout(function(element) {
+		setTimeout(function() {
 			element.remove();
 		}, milliSecond);
 	}
