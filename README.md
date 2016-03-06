@@ -1,9 +1,9 @@
 # Salute and Self-introduction
 
-- This is my own blog. And my name is weitao. Nice to meet you.
+- This is my own blog. And my name is weitao.
 
-- I work and live in Shanghai.
+- Work and live in Shanghai.
 
 - Radiohead is my favorite rock band.
 
-- I also love movies.
+- I love movies and music.
