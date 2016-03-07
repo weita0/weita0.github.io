@@ -1,9 +1,6 @@
 .heart {
 	display: inline;
-	position: relative;
-	width: 100px;
-	height: 90px;
-	margin-top: 10px;
+	position: absolute;
 }
 
 .heart:before,
@@ -13,7 +10,7 @@
 	width: 13px;
 	height: 20px;
 	background: #FFC0EE;
-	border-radius: 50px 50px 0 0;
+	border-radius: 100px 100px 0 0;
 	transform: rotate(-45deg);
 	transform-origin: 0 100%; /* Rotate it around the bottom-left corner */
 }

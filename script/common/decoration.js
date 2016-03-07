@@ -1,3 +1,7 @@
+/***
+ When mouse moved, there will be a trail.
+ When mouse clicked, there will be a heart showing up then fading out. 
+ ***/
 $(document).ready(function() {
 	this.addEventListener('mousemove', function(e) {
 		var x = e.pageX + 'px';
@@ -22,9 +26,9 @@ $(document).ready(function() {
 			heart.css('left', x);
 			heart.css('top', y);
 			heart.addClass('fix');
-			var body = $('body');
-			body.append(heart);
-			makeItDisappear(heart, 300);
+			var container = $('.container');
+			container.append(heart);
+			makeItDisappear(heart, 1000);
 		}
 	});
 
