@@ -26,7 +26,7 @@ $(document).ready(function() {
 			heart.css('left', x);
 			heart.css('top', y);
 			heart.addClass('fix');
-			var container = $('.container');
+			var container = $('.container-fluid');
 			container.append(heart);
 			makeItDisappear(heart, 1000);
 		}
