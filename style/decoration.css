@@ -1,3 +1,19 @@
+/***
+ 1. At anniversary page, with mouse moving, there will be a trail
+ 2. The same page, if mouse clicked(left), a heart will show up 
+ ***/
+
+ /* for trail */
+.trail {
+	position: absolute;
+	height: 6px;
+	width: 6px;
+	border-radius: 3px;
+ 	background: pink;
+}
+/* for trail ends */
+
+/* for heart */
 .heart {
 	display: inline;
 	position: absolute;
@@ -24,3 +40,5 @@
 .heart.fix:after {
 	left: -13px;
 }
+
+/* for herat ends */
