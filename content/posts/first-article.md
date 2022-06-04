@@ -1,9 +1,9 @@
 ---
 title: "First Article"
 date: 2022-06-04T17:50:49+08:00
-draft: true
+draft: false
 ---
 
-# hugo test
+## hugo test
 
 hello there, this is the first article using Hugo.
