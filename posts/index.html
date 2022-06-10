@@ -4,17 +4,16 @@
 安装完成后，执行hugo new site [projname]命令，这个命令会为你的项目生成一个目录。
 cd [projname]进入项目目录。
 git init 初始化git。
-git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 为你的网站添加一个主题，通过git submodule的方式。
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 为你的网站添加一个主题，通过git submodule的方式。这里不知道git submodule也没关系。
 打开一个文本编辑器，在config.toml文件下添加一行，theme = "ananke"。
 hugo new posts/first.md这个命令会为你创建一篇文章草稿。打开这个文件可以看到
---- title: "First" date: 2022-06-05T16:06:50+08:00 draft: true --- title是你这篇文章的标题，默认的标题就是你的文件名去掉中划线。
-draft表示文章是否是草稿状态，draft: true表示这是篇草稿，不会对外展示出来
-试着在这个文件下面随便写点什么
-hugo
-这个命令会构建你的网站
+--- title: "First" date: 2022-06-05T16:06:50+08:00 draft: true --- title是你这篇文章的标题，默认的标题是你的文件名去掉中划线。
+draft表示文章是否是草稿状态，draft: true表示这是篇草稿，不会对外展示出来，这里把它改为draft: false。
+试着在这个文件下面随便写点什么。
 编辑config.toml，增加一行baseURL = 'localhost:1313/'，当然也可以是别的端口号。
-hugo server -D
-在本地启动一个服务，通过localhost:1313，就可以看到你的网站了。</p></div><footer class=entry-footer><span title='2022-06-04 17:50:49 +0800 +0800'>June 4, 2022</span></footer><a class=entry-link aria-label="post link to 雨果" href=#ZgotmplZ></a></article></main><footer class=footer><span>&copy; 2022 <a href=#ZgotmplZ>Collie的博客</a></span>
+通过hugo server -D命令在本地启动服务，浏览器里输入地址localhost:1313，就可以看到你的网站了。
+部署到Github Pages 完成这一步之前，你只能在本地访问你的网站，完成这一步之后，任何上网的人都可以通过一个专属于你的地址访问你的网站。
+在Github上创建一个项目仓库（repo），项目名必须是 [userid].github.io，userid是</p></div><footer class=entry-footer><span title='2022-06-04 17:50:49 +0800 +0800'>June 4, 2022</span></footer><a class=entry-link aria-label="post link to 雨果" href=#ZgotmplZ></a></article></main><footer class=footer><span>&copy; 2022 <a href=#ZgotmplZ>Collie的博客</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script></body></html>
