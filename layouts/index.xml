@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Layouts on Restart | 重开</title><link>https://weita0.github.io/layouts/</link><description>Recent content in Layouts on Restart | 重开</description><generator>Hugo -- 0.147.5</generator><language>en-us</language><atom:link href="https://weita0.github.io/layouts/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://weita0.github.io/layouts/_default/term/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://weita0.github.io/layouts/_default/term/</guid><description>&lt;!-- layouts/_default/term.html -->
+&lt;h1>标签：{{ .Title }}&lt;/h1>
+&lt;ul>
+{{ range .Pages }}
+&lt;li>&lt;a href="{{ .RelPermalink }}">{{ .Title }}&lt;/a>&lt;/li>
+{{ end }}
+&lt;/ul></description></item><item><title/><link>https://weita0.github.io/layouts/_default/terms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://weita0.github.io/layouts/_default/terms/</guid><description>&lt;!-- layouts/_default/terms.html -->
+&lt;h1>所有标签&lt;/h1>
+&lt;ul>
+{{ range .Data.Terms.Alphabetical }}
+&lt;li>
+&lt;a href="{{ .Page.Permalink }}">{{ .Page.Title }}&lt;/a>
+({{ .Count }} 篇文章)
+&lt;/li>
+{{ end }}
+&lt;/ul></description></item></channel></rss>
